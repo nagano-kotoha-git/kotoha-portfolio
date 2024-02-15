@@ -1,0 +1,469 @@
+/* 書体の初期設定 */
+html,
+body {
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+p,
+li,
+td,
+th,
+dt,
+dd {
+    font-size: 1.6rem;
+    line-height: 1.9;
+}
+
+th,
+dt {
+    font-weight: 700;
+}
+
+small {
+    font-size: 1.4rem;
+}
+
+/* 非表示設定 */
+.visuallyhidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.none {
+    display: none;
+}
+
+/* 画像の初期設定 */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.mb {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+/* メディアクエリ (560px〜の画面サイズ) */
+@media (min-width:560px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+}
+
+header {
+    padding: 10px 0;
+
+    .home {
+        margin-left: 15px;
+        letter-spacing: 3px;
+        line-height: 1.3;
+        font-size: 2.6rem;
+        font-weight: 300;
+    }
+
+    &.top {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        #top-backimg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 80%;
+            width: 90%;
+            background-image: url(../img/top-main.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            z-index: -1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #ffffff18;
+            }
+        }
+
+        #catchcopy {
+            position: absolute;
+            left: 0;
+            bottom: 15%;
+
+            p {
+                display: inline-block;
+                font-size: 1.8rem;
+                font-weight: 300;
+                letter-spacing: 5px;
+
+                &:nth-of-type(1) {
+                    padding: 0 5px 0 32px;
+                    background-color: #3896B9;
+                    color: #fff;
+                }
+
+                &:nth-of-type(2) {
+                    padding-left: 32px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 28px 15px 16px;
+    background-color: #3896B9;
+    color: #fff;
+    font-weight: 300;
+
+    .footer-box {
+        #home {
+            margin-bottom: 0.8rem;
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        div {
+            ul {
+                margin-bottom: 5px;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: flex-start;
+
+                li {
+                    margin-right: 5rem;
+                    letter-spacing: 1.8px;
+                }
+            }
+
+            p {
+                margin-bottom: 2rem;
+                font-size: 1.6rem;
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    small {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 1.8px;
+    }
+}
+
+// タブレットサイズ
+@media (min-width: 767px) {
+    header {
+        padding: 10px 0;
+
+        .home {
+            margin-left: 42px;
+            letter-spacing: 7px;
+            line-height: 42px;
+            font-size: 3.2rem;
+            font-weight: 300;
+        }
+
+        &.top {
+            margin-bottom: 120px;
+
+            #top-backimg {
+                height: 85%;
+                width: 90%;
+            }
+
+            #catchcopy {
+                position: absolute;
+                left: 0;
+                bottom: 15%;
+
+                p {
+                    font-size: 2.8rem;
+                    letter-spacing: 10px;
+
+                    &:nth-of-type(1) {
+                        padding: 0 10px 0 42px;
+                    }
+
+                    &:nth-of-type(2) {
+                        padding-left: 42px;
+                    }
+                }
+            }
+
+            #nav {
+                position: absolute;
+                right: 0;
+                bottom: 12%;
+                width: 30%;
+
+                ul {
+                    li {
+                        margin: 40px 0;
+
+                        a {
+                            margin: 0 0 0 auto;
+                            width: 80%;
+                            display: block;
+                            padding: 0 2rem;
+                            font-size: 1.4rem;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                            border-bottom: solid #333 1px;
+                            transition: 0.5s;
+
+                            span {
+                                margin-right: 1.6rem;
+                                font-family: 'Shippori Mincho', serif;
+                                font-size: 2.4rem;
+                                font-weight: 400;
+                                letter-spacing: 3px;
+                            }
+
+                            &:hover {
+                                width: 100%;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 28px 42px 20px;
+
+        .footer-box {
+            #home {
+                font-size: 2.8rem;
+                letter-spacing: 5px;
+            }
+
+            div {
+                ul {
+                    li {
+                        margin-right: 5rem;
+                        font-size: 2.2rem;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+
+        small {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 1.8px;
+        }
+    }
+}
+
+@media (min-width: 1008px) {
+    .mb {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    header {
+        padding: 10px 0;
+
+        .home {
+            margin-left: 42px;
+            letter-spacing: 7px;
+            line-height: 42px;
+            font-size: 3.2rem;
+            font-weight: 300;
+        }
+
+        &.top {
+            margin-bottom: 240px;
+
+            #top-backimg {
+                height: 85%;
+                width: 90%;
+            }
+
+            #catchcopy {
+                position: absolute;
+                left: 0;
+                bottom: 15%;
+
+                p {
+                    font-size: 2.8rem;
+                    letter-spacing: 10px;
+
+                    &:nth-of-type(1) {
+                        padding: 0 10px 0 42px;
+                    }
+
+                    &:nth-of-type(2) {
+                        padding-left: 42px;
+                    }
+                }
+            }
+
+            #nav {
+                position: absolute;
+                right: 0;
+                bottom: 12%;
+                width: 30%;
+
+                ul {
+                    li {
+                        margin: 40px 0;
+
+                        a {
+                            margin: 0 0 0 auto;
+                            width: 80%;
+                            display: block;
+                            padding: 0 2rem;
+                            font-size: 1.4rem;
+                            font-weight: 300;
+                            letter-spacing: 2px;
+                            border-bottom: solid #333 1px;
+                            transition: 0.5s;
+
+                            span {
+                                margin-right: 1.6rem;
+                                font-family: 'Shippori Mincho', serif;
+                                font-size: 2.4rem;
+                                font-weight: 400;
+                                letter-spacing: 3px;
+                            }
+
+                            &:hover {
+                                width: 100%;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        padding: 40px 100px 16px;
+        background-color: #3896B9;
+        color: #fff;
+        font-weight: 300;
+
+        .footer-box {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            #home {
+                margin-bottom: 0.8rem;
+                font-size: 2.8rem;
+                font-weight: 300;
+                letter-spacing: 5px;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
+            div {
+                ul {
+                    margin-bottom: 5px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    li {
+                        margin-right: 0;
+                        margin-left: 5rem;
+                        font-size: 2.2rem;
+                        letter-spacing: 5px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+
+        small {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 1.8px;
+        }
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,301 @@
+// タブレットサイズ
+@media (min-width: 767px) {
+    .works-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 30px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .work-box {
+            flex: 0 0 45%;
+
+            .img-wrapper {
+                overflow: hidden;
+                margin-bottom: 10px;
+
+                img {
+                    margin-bottom: 0;
+                    transition: 0.3s;
+                }
+            }
+
+            .type {
+                width: 100%;
+                margin-bottom: 5px;
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+                color: #999;
+            }
+
+            .flex-text {
+                margin-bottom: 0;
+                display: flex;
+                align-items: last baseline;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    letter-spacing: 1.8px;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    letter-spacing: 1.2px;
+                }
+            }
+
+            .explain {
+                font-size: 1.2rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+                color: #666666;
+            }
+
+            &:hover {
+                transition: 0.3s all;
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1008px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0 0;
+    }
+
+    section {
+        margin-bottom: 100px;
+
+        img {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 2.8px;
+            line-height: 1.7;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+            line-height: 2;
+        }
+    }
+
+    section:nth-of-type(1) {
+        .summary {
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap nowrap;
+            align-items: last baseline;
+            justify-content: space-between;
+
+            div {
+                h1 {
+                    margin-bottom: 10px;
+                    font-size: 3.8rem;
+                    font-weight: 400;
+                    letter-spacing: 4px;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    letter-spacing: 2px;
+
+                    &:nth-of-type(1) {
+                        letter-spacing: 1.8px;
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: #666666;
+                    }
+                }
+            }
+
+            .date {
+                color: #666666;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+
+        img {
+            margin-bottom: 40px;
+        }
+
+        .explanation {
+            p {
+                &:nth-of-type(1) {
+                    width: 100%;
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    letter-spacing: 1.8px;
+                    color: #999;
+                }
+            }
+
+            dl {
+                margin: 20px 0 0;
+                width: 100%;
+
+                dt,
+                dd {
+                    width: 100%;
+                    display: block;
+                    font-weight: 300;
+                }
+
+                dt {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                }
+
+                dd {
+                    margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    letter-spacing: 1.8px;
+                }
+            }
+        }
+    }
+
+    .video {
+        width: 100%;
+        position: relative;
+        padding-top: 56.25%;
+        margin-bottom: 40px;
+    }
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .work-extra {
+        margin: 20px 0 0;
+        width: 100%;
+
+        dt,
+        dd {
+            width: 100%;
+            display: block;
+            font-weight: 300;
+        }
+
+        dt {
+            margin: 40px 0 5px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            a{
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .works-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 30px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .work-box {
+            flex: 0 0 30%;
+
+            .img-wrapper {
+                overflow: hidden;
+                margin-bottom: 10px;
+
+                img {
+                    margin-bottom: 0;
+                    transition: 0.3s;
+                }
+            }
+
+            .type {
+                width: 100%;
+                margin-bottom: 5px;
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+                color: #999;
+            }
+
+            .flex-text {
+                margin-bottom: 0;
+                display: flex;
+                align-items: last baseline;
+                justify-content: space-between;
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    letter-spacing: 1.8px;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    letter-spacing: 1.2px;
+                }
+            }
+
+            .explain {
+                font-size: 1.2rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+                color: #666666;
+            }
+
+            &:hover {
+                transition: 0.3s all;
+
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

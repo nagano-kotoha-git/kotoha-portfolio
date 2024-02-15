@@ -1,0 +1,226 @@
+main {
+    width: 100%;
+    padding: 20px 14px 0;
+}
+
+section {
+    margin-bottom: 100px;
+
+    img {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        line-height: 1.7;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+}
+
+section:nth-of-type(1) {
+    .summary {
+        margin-bottom: 40px;
+
+        div {
+            h1 {
+                margin-bottom: 10px;
+                font-size: 2.4rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+
+                &:nth-of-type(1) {
+                    letter-spacing: 1.8px;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+
+                &:nth-of-type(2) {
+                    color: #666666;
+                }
+            }
+        }
+
+        .date {
+            color: #666666;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+
+    img {
+        margin-bottom: 40px;
+    }
+
+    .explanation {
+        p {
+            &:nth-of-type(1) {
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+                color: #999;
+            }
+        }
+
+        dl {
+            margin: 20px 0 0;
+            width: 100%;
+
+            dt,
+            dd {
+                width: 100%;
+                display: block;
+                font-weight: 300;
+            }
+
+            dt {
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 1.4px;
+            }
+
+            dd {
+                margin-bottom: 20px;
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+    margin-bottom: 40px;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.work-extra {
+    margin: 20px 0 0;
+    width: 100%;
+
+    dt,
+    dd {
+        width: 100%;
+        display: block;
+        font-weight: 300;
+    }
+
+    dt {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+    }
+
+    dd {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}
+
+.works-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 20px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .work-box {
+        position: relative;
+        flex: 0 0 85%;
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
+
+        .type {
+            width: 100%;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #999;
+        }
+
+        .flex-text {
+            margin-bottom: 0;
+            display: flex;
+            align-items: last baseline;
+            justify-content: space-between;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 1.8px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        .explain {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #666666;
+        }
+    }
+}
+
+.thumiki {
+    color: #F4CF1D;
+}
+.miku{
+    color: #6EC5CA;
+}
+.kindergarten{
+    color: #89B13A;
+}
+.kenthouse{
+    color: #192A81;
+}
+.tea{
+    color: #914F9B;
+}
+.beauty{
+    color: #D74B95;
+}
